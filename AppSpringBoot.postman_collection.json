@@ -48,16 +48,11 @@
 					"name": "PostOrders",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
+							"type": "bearer",
+							"bearer": [
 								{
-									"key": "password",
-									"value": "1234",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "user",
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkzNzczMDUsImV4cCI6MTcxOTQwNjEwNX0.rRSBu_rFN9IoEdUBHKZNDMf29xWVD9xZphhN9xFByjE",
 									"type": "string"
 								}
 							]
@@ -66,7 +61,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"productId\": 2,\r\n    \"unitPrice\": 30000.0,\r\n    \"quantity\": 4,\r\n    \"total\": 120000.0,\r\n    \"date\": \"2024-06-05\",\r\n    \"notes\": \"Numero de Serie BX8070110400 con 6 núcleos y 4.3GHz de frecuencia con gráfica integrada\"\r\n}",
+							"raw": "{\r\n    \"productId\": 15,\r\n    \"unitPrice\": 30000.0,\r\n    \"quantity\": 4,\r\n    \"total\": 120000.0,\r\n    \"date\": \"2024-06-05\",\r\n    \"notes\": \"Numero de Serie BX8070110400 con 6 núcleos y 4.3GHz de frecuencia con gráfica integrada\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -92,16 +87,11 @@
 					"name": "PutOrders",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
+							"type": "bearer",
+							"bearer": [
 								{
-									"key": "password",
-									"value": "1234",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "user",
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkzNzczMDUsImV4cCI6MTcxOTQwNjEwNX0.rRSBu_rFN9IoEdUBHKZNDMf29xWVD9xZphhN9xFByjE",
 									"type": "string"
 								}
 							]
@@ -118,7 +108,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/orders/1",
+							"raw": "http://localhost:8082/api/orders/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -127,7 +117,7 @@
 							"path": [
 								"api",
 								"orders",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -137,16 +127,11 @@
 					"name": "DeleteOrders",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
+							"type": "bearer",
+							"bearer": [
 								{
-									"key": "password",
-									"value": "1234",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "user",
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkzNzczMDUsImV4cCI6MTcxOTQwNjEwNX0.rRSBu_rFN9IoEdUBHKZNDMf29xWVD9xZphhN9xFByjE",
 									"type": "string"
 								}
 							]
@@ -154,7 +139,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/orders/1",
+							"raw": "http://localhost:8082/api/orders/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -163,7 +148,7 @@
 							"path": [
 								"api",
 								"orders",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -184,14 +169,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/publico/authenticate",
+							"raw": "http://localhost:8082/authenticate",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8082",
 							"path": [
-								"publico",
 								"authenticate"
 							]
 						}
@@ -234,7 +218,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkyODc1MzgsImV4cCI6MTcxOTMxNjMzOH0._ZXW_K8-GAPUjOKRQG-KsQHKzg7WxU3ampgHasWLv0w",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkzNzcxMzAsImV4cCI6MTcxOTQwNTkzMH0.6s01IyD0ajfJnMA0OZGpgtzL1aZcq66JNZk2vkjKLA8",
 									"type": "string"
 								}
 							]
@@ -269,16 +253,11 @@
 					"name": "PutProducts",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
+							"type": "bearer",
+							"bearer": [
 								{
-									"key": "password",
-									"value": "1234",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "user",
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkzNzcxMzAsImV4cCI6MTcxOTQwNTkzMH0.6s01IyD0ajfJnMA0OZGpgtzL1aZcq66JNZk2vkjKLA8",
 									"type": "string"
 								}
 							]
@@ -295,7 +274,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/api/products/6",
+							"raw": "http://localhost:8083/api/products/7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -304,7 +283,7 @@
 							"path": [
 								"api",
 								"products",
-								"6"
+								"7"
 							]
 						}
 					},
@@ -318,7 +297,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkyODc1MzgsImV4cCI6MTcxOTMxNjMzOH0._ZXW_K8-GAPUjOKRQG-KsQHKzg7WxU3ampgHasWLv0w",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2wiOnsiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn0sInN1YiI6ImV6ZVVzZXIiLCJpYXQiOjE3MTkzNzcxMzAsImV4cCI6MTcxOTQwNTkzMH0.6s01IyD0ajfJnMA0OZGpgtzL1aZcq66JNZk2vkjKLA8",
 									"type": "string"
 								}
 							]
@@ -326,7 +305,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/products/6",
+							"raw": "http://localhost:8083/api/products/7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -335,7 +314,7 @@
 							"path": [
 								"api",
 								"products",
-								"6"
+								"7"
 							]
 						}
 					},
@@ -393,14 +372,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/publico/authenticate",
+							"raw": "http://localhost:8083/authenticate",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8083",
 							"path": [
-								"publico",
 								"authenticate"
 							]
 						}

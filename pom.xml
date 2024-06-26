@@ -8,6 +8,13 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<developers>
+		<developer>
+			<name>Ezequiel Mathias Tello Pereyra</name>
+			<email>telloezequiel8@gmail.com</email>
+		</developer>
+	</developers>
+
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>

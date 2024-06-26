@@ -20,12 +20,12 @@ public class OrderController {
 
     private final OrderService orderService;
 
-    /*****************CONTROLADOR PARA OBTENER ORDENES*****************/
+    /********** CONTROLADOR PARA OBTENER ORDENES **********/
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Order> getOrders() {return orderService.getOrders();}
 
-    /*****************CONTROLADOR PARA CREAR ORDEN*****************/
+    /********** CONTROLADOR PARA CREAR ORDEN **********/
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Object>newOrder (@Valid @RequestBody Order order, BindingResult bindingResult) {
@@ -39,14 +39,14 @@ public class OrderController {
         return orderService.newOrder(order);
     }
 
-    /*****************CONTROLADOR PARA ACTUALIZAR ORDEN*****************/
+    /********** CONTROLADOR PARA ACTUALIZAR ORDEN **********/
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Object> updateOrder(@PathVariable("id") Long id, @RequestBody Order updatedOrder) {
         return orderService.updateOrder(id, updatedOrder);
     }
 
-    /*****************CONTROLADOR PARA ELIMINAR ORDEN*****************/
+    /********** CONTROLADOR PARA ELIMINAR ORDEN **********/
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public ResponseEntity<Object> deleteOrder(@PathVariable("id") Long id) {

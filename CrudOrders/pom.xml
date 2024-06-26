@@ -12,6 +12,13 @@
 	<name>CrudOrders</name>
 	<description>CRUD service for orders</description>
 
+	<developers>
+		<developer>
+			<name>Ezequiel Mathias Tello Pereyra</name>
+			<email>telloezequiel8@gmail.com</email>
+		</developer>
+	</developers>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -3,11 +3,11 @@ info:
   title: "Products API"
   version: "1.0.0"
   contact:
-    name: "Ezequiel M"
+    name: "Ezequiel Tello - UCC - BACKEND"
     url: "https://www.linkedin.com/in/telloezequiel/"
   description: "This project provides CRUD operations for managing products."
 paths:
-  /api/productos:
+  /api/products:
     get:
       summary: Obtener productos
       description: Retorna una lista de productos

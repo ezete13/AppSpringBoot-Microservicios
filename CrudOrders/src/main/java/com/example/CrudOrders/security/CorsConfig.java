@@ -1,6 +1,5 @@
 package com.example.CrudOrders.security;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -12,6 +11,7 @@ import java.util.Arrays;
 @Configuration
 public class CorsConfig {
 
+    /********** METODO PARA CONFIGURAR CORS **********/
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();

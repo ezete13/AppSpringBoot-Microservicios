@@ -19,19 +19,18 @@ public class OrderService {
     private final RestTemplate restTemplate = new RestTemplate();
     private final OrderRepository orderRepository;
 
-    /*****************METODO PARA OBTENER ORDENES*****************/
+    /********** METODO PARA OBTENER ORDENES **********/
     public List<Order> getOrders() {
         return orderRepository.findAll();
     }
 
-    /*****************METODO PARA CREAR ORDEN*****************/
+    /********** METODO PARA CREAR ORDEN **********/
     public ResponseEntity<Object> newOrder(Order order) {
         Long productId = order.getProductId();
         String url = "http://localhost:8083/api/products/find/" + productId;
         try {
             ResponseEntity<Object> response = restTemplate.getForEntity(url, Object.class);
 
-            // Verificar si el producto existe
             if (response.getStatusCode() == HttpStatus.OK) {
                 // Producto encontrado, guardar la orden
                 orderRepository.save(order);
